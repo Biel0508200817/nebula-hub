@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nebula Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            ✦ Nebula Hub
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#explorar">Explorar</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <button id="themeButton" class="theme-button">
+            🌙
+        </button>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <span class="tag">🚀 PROJETO ALEATÓRIO</span>
+
+                <h1>
+                    Explore ideias
+                    <span>fora da órbita.</span>
+                </h1>
+
+                <p>
+                    Um pequeno universo criado com HTML, CSS e JavaScript
+                    para testar criatividade e programação.
+                </p>
+
+                <div class="buttons">
+                    <a href="#explorar" class="primary-button">
+                        Explorar agora →
+                    </a>
+
+                    <button id="randomButton" class="secondary-button">
+                        ✨ Surpreenda-me
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="planet">
+                <div class="planet-ring"></div>
+                <div class="planet-core"></div>
+            </div>
+
+        </section>
+
+
+        <section id="explorar" class="section">
+
+            <div class="section-title">
+                <span>01</span>
+
+                <div>
+                    <h2>O que existe por aqui?</h2>
+                    <p>
+                        Algumas coisas interessantes para explorar.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="card-icon">🌌</div>
+
+                    <h3>Universo</h3>
+
+                    <p>
+                        Descubra fatos curiosos sobre o espaço,
+                        estrelas e planetas.
+                    </p>
+
+                    <button class="card-button" data-message="O universo é enorme!">
+                        Descobrir
+                    </button>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">⚡</div>
+
+                    <h3>Tecnologia</h3>
+
+                    <p>
+                        Ideias, códigos e experiências criadas
+                        para aprender programação.
+                    </p>
+
+                    <button class="card-button" data-message="Continue programando e evoluindo!">
+                        Explorar
+                    </button>
+                </article>
+
+
+                <article class="card">
+                    <div class="card-icon">🎮</div>
+
+                    <h3>Games</h3>
+
+                    <p>
+                        Pequenos conceitos de jogos e experiências
+                        interativas para a web.
+                    </p>
+
+                    <button class="card-button" data-message="Quem sabe o próximo jogo seja seu?">
+                        Jogar
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="random-section">
+
+            <div>
+                <span class="tag">GERADOR ALEATÓRIO</span>
+
+                <h2>Precisa de uma ideia?</h2>
+
+                <p>
+                    Clique no botão e deixe o Nebula Hub escolher
+                    uma ideia para você.
+                </p>
+            </div>
+
+            <div class="generator">
+
+                <div id="idea">
+                    💡 Clique em gerar
+                </div>
+
+                <button id="generateButton">
+                    Gerar ideia
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="sobre" class="about">
+
+            <span class="tag">SOBRE O PROJETO</span>
+
+            <h2>Feito para experimentar.</h2>
+
+            <p>
+                Este projeto foi criado do zero utilizando apenas
+                tecnologias básicas da web. A ideia é mostrar como
+                HTML, CSS e JavaScript podem criar uma experiência
+                completa sem frameworks.
+            </p>
+
+            <div class="technologies">
+
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+            ✦ Nebula Hub
+        </div>
+
+        <p>
+            Criado do zero • 2026
+        </p>
+
+    </footer>
+
+
+    <div id="notification" class="notification">
+        Mensagem
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

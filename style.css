@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #090b16;
+    color: #ffffff;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #20243a;
+
+    background: rgba(9, 11, 22, 0.9);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #aeb3c7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.theme-button {
+    border: 1px solid #303650;
+    background: #12162a;
+    color: white;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 17px;
+}
+
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    background: #171c35;
+
+    color: #8e9cff;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 7vw, 90px);
+    line-height: 0.98;
+
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    display: block;
+    color: #8995ff;
+}
+
+.hero p {
+    color: #aeb3c7;
+    font-size: 18px;
+    max-width: 550px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #8995ff;
+    color: #090b16;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    border: 1px solid #303650;
+    background: transparent;
+    color: white;
+}
+
+.secondary-button:hover {
+    background: #171c35;
+}
+
+
+.planet {
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet-core {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #727fff,
+        #343b96
+    );
+
+    box-shadow:
+        0 0 60px #4b56d2,
+        0 0 120px #303a9b;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.planet-ring {
+    position: absolute;
+
+    width: 320px;
+    height: 90px;
+
+    border: 2px solid #7f89ff;
+
+    border-radius: 50%;
+
+    transform: rotate(-20deg);
+
+    opacity: 0.7;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.section {
+    padding: 100px 10%;
+}
+
+.section-title {
+    display: flex;
+    gap: 25px;
+
+    margin-bottom: 50px;
+}
+
+.section-title > span {
+    color: #8995ff;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 38px;
+}
+
+.section-title p {
+    color: #858ba2;
+}
+
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+
+    background: #111426;
+
+    border: 1px solid #20243a;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #5965d9;
+}
+
+.card-icon {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #858ba2;
+    margin-bottom: 25px;
+}
+
+.card-button {
+    border: none;
+
+    background: none;
+
+    color: #8995ff;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.random-section {
+    margin: 40px 10% 100px;
+
+    padding: 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+
+    background: #111426;
+
+    border: 1px solid #20243a;
+
+    border-radius: 20px;
+}
+
+.random-section h2 {
+    font-size: 35px;
+
+    margin: 15px 0 5px;
+}
+
+.random-section p {
+    color: #858ba2;
+}
+
+.generator {
+    min-width: 320px;
+
+    text-align: center;
+}
+
+#idea {
+    padding: 25px;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    background: #090b16;
+
+    border: 1px solid #303650;
+
+    color: #dce0ff;
+}
+
+#generateButton {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #8995ff;
+
+    color: #090b16;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.about {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 80px 20px 120px;
+}
+
+.about h2 {
+    font-size: 42px;
+
+    margin: 20px 0;
+}
+
+.about p {
+    color: #858ba2;
+
+    font-size: 17px;
+}
+
+.technologies {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.technologies span {
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    background: #171c35;
+
+    color: #aab2ff;
+}
+
+
+footer {
+    padding: 30px 10%;
+
+    border-top: 1px solid #20243a;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #858ba2;
+}
+
+
+.notification {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    padding: 15px 20px;
+
+    background: #8995ff;
+
+    color: #090b16;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transform: translateY(100px);
+
+    opacity: 0;
+
+    transition: 0.3s;
+
+    z-index: 20;
+}
+
+.notification.show {
+    transform: translateY(0);
+
+    opacity: 1;
+}
+
+
+/* MODO CLARO */
+
+body.light {
+    background: #f5f6fa;
+
+    color: #171a29;
+}
+
+body.light .navbar {
+    background: rgba(245, 246, 250, 0.9);
+
+    border-color: #dddfea;
+}
+
+body.light nav a {
+    color: #606579;
+}
+
+body.light .theme-button,
+body.light .secondary-button {
+    color: #171a29;
+
+    background: white;
+
+    border-color: #d8dbe8;
+}
+
+body.light .hero p,
+body.light .card p,
+body.light .random-section p,
+body.light .about p {
+    color: #62677a;
+}
+
+body.light .card,
+body.light .random-section {
+    background: white;
+
+    border-color: #e0e2eb;
+}
+
+body.light #idea {
+    background: #f5f6fa;
+
+    color: #171a29;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 70px;
+    }
+
+    .hero p {
+        margin: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .planet {
+        margin-top: 70px;
+
+        transform: scale(0.8);
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .random-section {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .generator {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+}
